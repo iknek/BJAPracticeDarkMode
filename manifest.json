@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Background Color Changer",
+  "version": "1.0",
+  "permissions": ["activeTab", "storage", "<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.blackjackapprenticeship.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
